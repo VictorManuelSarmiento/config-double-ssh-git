@@ -19,7 +19,7 @@ Instrucciones para configurar una doble clave ssh
 ## Editamos el archivo ~/.ssh/config
 
 ```html
-Host grunmir
+Host grunmir.com
     Hostname github.com
     User git
     IdentityFile /Users/grunmir/.ssh/grunmir_rsa
@@ -39,6 +39,6 @@ Host default
 Para usar la clave ssh correpondiente a un host hay que cambiar el __remote__ de nuestro proyector por uno nuevo:
 
 * Si `git remote -v` es `git@github.com:grunmir/nombre-repositorio.git`
-* Entonces hay que sustituirlo por `git@grunmir:grunmir/nombre-repositorio.git`
+* Entonces hay que sustituirlo por `git@grunmir.com:grunmir/nombre-repositorio.git`
 
 De esta forma usaremos la __clave ssh__ correspondiente al __Host__ que hayamos sustituido en la direccion del __remote__ del proyecto.
