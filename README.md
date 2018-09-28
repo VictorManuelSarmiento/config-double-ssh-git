@@ -1,4 +1,4 @@
-# config-double-ssh
+# config-double-ssh-git
 Instrucciones para configurar una doble clave ssh
 
 ## Crear fichero con la nueva clave ssh:
@@ -42,3 +42,9 @@ Para usar la clave ssh correpondiente a un host hay que cambiar el __remote__ de
 * Entonces hay que sustituirlo por `git@grunmir.com:grunmir/nombre-repositorio.git`
 
 De esta forma usaremos la __clave ssh__ correspondiente al __Host__ que hayamos sustituido en la direccion del __remote__ del proyecto.
+
+## Copiar clave publica ssh
+
+```javascrit 
+pbcopy < ~/.ssh/grunmir_rsa.pub
+```
